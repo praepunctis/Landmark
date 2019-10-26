@@ -1,5 +1,5 @@
 # Landmark
-_Streamlined, decentralized, community-driven adventure crafting._ 
+_Streamlined, decentralized, cross-platform adventure crafting._ 
 <br/>
 
 ##### Things to do 
