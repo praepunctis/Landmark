@@ -7,33 +7,20 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|EB+Garamond|Roboto&display=swap" rel="stylesheet"> 
 
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; z-index:1}
-        h1{
-            font-family: 'Abril Fatface', cursive;
-            color: #379683;
-        }
-        #nav_bar{
-            width: 100%;
-            display: inline-block;
-            background-color:#5CDB95;
-            text-align: center;
-        }
-        i{
-            display: inline-block;
-            color: #05386B;
-        }
-    </style>
 </head>
 <body>
-
 
 <div id='map'>    
     <div id="nav_bar">
         <h1>LANDMARK<i class="fa fa-map-pin" aria-hidden="true"></i></h1>
+    </div>
+    <div id="menu">
+        <div class="menu-item" alt="Add Stop"><i class="fa fa-plus" aria-hidden="true"></i></div>
+        <div class="menu-item" alt="Explore"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+        <div class="menu-item" alt="Navigate"><i class="fa fa-search" aria-hidden="true"></i></div>
     </div>
 </div>
 
@@ -41,7 +28,7 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoia2Zlc2xlciIsImEiOiJjazI3cG9jNTcwZ3VoM21sc3lhOHFtNnYzIn0.i6MLXYxFPfw96PdwMfIWnw';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v9',
+    style: 'mapbox://styles/mapbox/dark-v10',
     center: [-103.59179687498357, 40.66995747013945],
     zoom: 3
 });
