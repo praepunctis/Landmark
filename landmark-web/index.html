@@ -6,6 +6,7 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|EB+Garamond|Roboto&display=swap" rel="stylesheet"> 
 
     <style>
@@ -13,13 +14,7 @@
         #map { position:absolute; top:0; bottom:0; width:100%; z-index:1}
         h1{
             font-family: 'Abril Fatface', cursive;
-        }
-        #container{
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            padding: 0px;
-            z-index: 2;
+            color: #379683;
         }
         #nav_bar{
             width: 100%;
@@ -27,16 +22,18 @@
             background-color:#5CDB95;
             text-align: center;
         }
+        i{
+            display: inline-block;
+            color: #05386B;
+        }
     </style>
 </head>
 <body>
 
 
-<div id='map'></div>
-<div id="container">
+<div id='map'>    
     <div id="nav_bar">
-        <h1>LANDMARK</h1>
-        <i class="fa fa-map-pin" aria-hidden="true"></i>
+        <h1>LANDMARK<i class="fa fa-map-pin" aria-hidden="true"></i></h1>
     </div>
 </div>
 
@@ -76,11 +73,11 @@ map.on('load', function() {
             "circle-color": [
                 "step",
                 ["get", "point_count"],
-                "#51bbd6",
+                "#05386B",
                 100,
-                "#f1f075",
+                "#379683",
                 750,
-                "#f28cb1"
+                "#5CDB95"
             ],
             "circle-radius": [
                 "step",
@@ -112,7 +109,7 @@ map.on('load', function() {
         source: "earthquakes",
         filter: ["!", ["has", "point_count"]],
         paint: {
-            "circle-color": "#11b4da",
+            "circle-color": "#05386B",
             "circle-radius": 4,
             "circle-stroke-width": 1,
             "circle-stroke-color": "#fff"
