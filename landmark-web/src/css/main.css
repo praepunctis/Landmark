@@ -1,0 +1,16 @@
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; z-index:1}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    color: #379683;
+}
+#nav_bar{
+    width: 100%;
+    display: inline-block;
+    background-color:#5CDB95;
+    text-align: center;
+}
+i{
+    display: inline-block;
+    color: #05386B;
+}
