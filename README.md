@@ -3,22 +3,18 @@ _Streamlined, decentralized, cross-platform adventure crafting._
 <br/>
 
 ##### Things to do 
-* mess around with App.js
-* write a better README
+* integrate Cockroach DB with Mapbox JS web app
 
 ##### This project uses:
-* Expo
-* React.js
-* Cockroach DB (thanks Jason)
+* Expo (native)
+* React.js (native)
+* React Native (native)
+* Cockroach DB (pending)
+* Mapbox API (web)
 
 ##### We also hope to use:
-* Mapbox API
 * rideOS API
 * Ford SDL API
 
-##### Notes to self:
-```
-expo start
-```
 
 ###### Made with  :yellow_heart:at Cal Hacks 6.0
