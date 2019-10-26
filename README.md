@@ -9,9 +9,9 @@ _Streamlined, decentralized, cross-platform adventure crafting._
 ##### This project uses:
 * Expo
 * React.js
+* Cockroach DB (thanks Jason)
 
 ##### We also hope to use:
-* Cockroach DB
 * Mapbox API
 * rideOS API
 * Ford SDL API
