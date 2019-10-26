@@ -10,15 +10,11 @@ _Streamlined, decentralized, cross-platform adventure crafting._
 * Expo
 * React.js
 * Cockroach DB (thanks Jason)
+* Mapbox API (work in progress)
 
 ##### We also hope to use:
-* Mapbox API
 * rideOS API
 * Ford SDL API
 
-##### Notes to self:
-```
-expo start
-```
 
 ###### Made with  :yellow_heart:at Cal Hacks 6.0
