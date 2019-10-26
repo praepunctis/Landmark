@@ -123,6 +123,7 @@ function pull_landmarks() {
   })
   .then(function (landmarks) {
     landmarks.forEach(function (landmark) {
+      // callback function of some form
       add_point(
         landmark.latitude, 
         landmark.longitude, 
