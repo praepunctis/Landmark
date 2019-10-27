@@ -55,8 +55,7 @@ var Landmark = sequelize.define('landmarks', {
 //   .then(function () {
 //       // Insert two rows into the "landmarks" table.
 //       return Landmark.bulkCreate([
-//         data_to_json('1stadium',10, 3.5, null),
-//         data_to_json('2field',  20, 3.7, null)
+//         data_to_json(1,1,'1stadium','d',null,10, 3.5, 1),
 //       ]);
 //   })
 //   .then(function () {
@@ -66,7 +65,7 @@ var Landmark = sequelize.define('landmarks', {
 //   .then(function (landmarks) {
 //       // Print out values.
 //       landmarks.forEach(function (landmark) {
-//           console.log(landmark.landmark_id + ' ' + landmark.name + ' ' + landmark.rating);
+//           console.log(llandmark);
 //       });
 //       process.exit(0);
 //   })

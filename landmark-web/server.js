@@ -23,8 +23,10 @@ app.get('/src/js/Mapbox.js',function(req,res){
 
 app.post('/submit', function(req, res) {
    var d = req.body
-   Cockroach.push_landmark(d.latitude, d.longitude, d.name, d.description, d.image, d.n_ratings, d.rating, d.type)
-   res.send(0);
+  //  res.send(d)
+   console.log(d)
+   Cockroach.push_landmark(d["latitude"], d["longitude"], d["name"], d["description"], d["image"], d["n_ratings"], d["rating"], d["type"])
+   res.send("yes!");
 });
 
 app.get('/points', function(req,res) {
