@@ -6,6 +6,29 @@ var map = new mapboxgl.Map({
     zoom: 3
 });
 
+
+function submitForm(){
+    var address = document.getElementById("address").value;
+    var queri = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + address +".json?types=address&access_token=" + mapboxgl.accessToken;
+    axios.post('/submit',
+        {
+            'latitude': 50,
+            'longitude': 100,
+            'name': document.getElementById("name").value,
+            'description': document.getElementById("description").value,
+            'image': null,
+            'n-rating': 32,
+            'rating': 3.5,
+            'type': 1
+    })
+    .then(
+    )
+}
+
+function getPoints(){
+    
+}
+
 map.on('load', function() {
     // Add a new source from our GeoJSON data and set the
     // 'cluster' option to true. GL-JS will add the point_count property to your source data.
