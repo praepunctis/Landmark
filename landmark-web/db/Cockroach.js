@@ -99,11 +99,11 @@ module.exports = {
       return Landmark.findAll();
     })
     .then(function () {
-        process.exit(0);
+        // process.exit(0);
     })
     .catch(function (err) {
       console.error('error: ' + err.message);
-      process.exit(1);
+      // process.exit(1);
     });
   },
 
@@ -152,7 +152,17 @@ module.exports = {
         n_ratings: 5,
         rating: .7,
         type: 1
-      }
+      },
+      {
+        latitude: 37.871860,
+        longitude: -122.254520,
+        name:"Cal Performances",
+        description: "hey this is a cool place where they play music maybe?",
+        image: null,
+        n_ratings: 2,
+        rating: 7,
+        type:1
+      },
     ]
   }
 }
