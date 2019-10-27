@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "console": "^0.7.2",
+=======
+    "axios": "^0.19.0",
+>>>>>>> d3dc6b21fc5d28b35bc417ae14b428bad6deec66
     "express": "^4.17.1"
   }
 }
