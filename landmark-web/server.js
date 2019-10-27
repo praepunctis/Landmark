@@ -19,6 +19,10 @@ app.get('/src/js/Mapbox.js',function(req,res){
   res.sendFile(path.join(__dirname + '/src/js/Mapbox.js')); 
 });
 
+app.get('/src/js/popup.js',function(req,res){
+  res.sendFile(path.join(__dirname + '/src/js/popup.js')); 
+});
+
 // app.get('/src/js/Cockroach.js',function(req,res){
 //   res.sendFile(path.join(__dirname + '/src/js/Cockroach.js')); 
 // });

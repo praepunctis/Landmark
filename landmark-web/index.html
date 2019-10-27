@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|EB+Garamond|Roboto&display=swap" rel="stylesheet"> 
 
+    
 </head>
 <body>
 
@@ -18,13 +19,33 @@
         <h1>LANDMARK<i class="fa fa-map-marker" aria-hidden="true"></i></h1>
     </div>
     <div id="menu">
-        <div class="menu-item" alt="Add Stop"><i class="fa fa-plus" aria-hidden="true"></i></div>
-        <div class="menu-item" alt="Explore"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
-        <div class="menu-item" alt="Navigate"><i class="fa fa-search" aria-hidden="true"></i></div>
+        <div class="menu-item" alt="Add Stop" onclick="toggleAction('addStop')"><i class="fa fa-plus" aria-hidden="true"></i></div>
+        <div class="menu-item" alt="Explore" onclick="myMove()"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+        <div class="menu-item" alt="Navigate" onclick="toggleAction('navigate')"><i class="fa fa-search" aria-hidden="true"></i></div>
     </div>
+    <div id="addStop">
+            <div onclick="toggleAction('addStop')"> <i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
+        <form>
+            <h1 style="text-align: center">ADD STOP</h1>
+            <p>NAME</p>
+            <input type="text" name="name">
+            <br>
+            <p>ADDRESS</p>
+            <input type="text" name="address">
+            <br>
+            <p>DESCRIPTION</p>
+            <textarea name="description" rows="2"></textarea>
+            <br>
+            <input type="button" value="Submit" onclick="submitform()" id="submitButton">
+        </form>
+    </div>
+    <div id="explore"></div>
+    <div id="navigate"></div>
 </div>
 
 <script src = 'src/js/Mapbox.js'>
+</script>
+<script src = 'src/js/popup.js'>
 </script>
 
 </body>
