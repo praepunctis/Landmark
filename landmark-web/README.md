@@ -1,4 +1,10 @@
 # landmark-web
+
+
+### hi welcome to the routing-dev branch  
+today i will be writing changes in locator.html and serving that page instead of index.html  
+
+
 To build and run the web app:
 * run ```node server.js```
 * nice
