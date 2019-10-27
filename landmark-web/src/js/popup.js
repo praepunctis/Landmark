@@ -14,24 +14,23 @@ function toggleAction(action){
 function myMove() {
     var elem = document.getElementById("explore");
     var set_width = window.innerWidth * 0.33;
-
-    if(elem.style.left != "-33%"){
-        
+  console.log(elem.style.left);
+    if(elem.style.left == ""){
         elem.style.display = "block";
         var pos = -1 * set_width;
         var id = setInterval(frame, 0.5);
         function frame() {
-          if (pos >= 0) {
+          if (pos > -10) {
+            elem.style.left = "0px";
             clearInterval(id);
           } else {
-            pos += 6;
+            pos += 30;
             elem.style.left = pos + "px"; 
           }
         }
-        //document.getElementById("exploreContainer").style.display = "block";
     }
     else{
-        elem.style.left = -1 * set_width;
-        //document.getElementById("exploreContainer").style.display = "none";
+        elem.style.left = "";
+        elem.style.display = "none";
     }
   }
