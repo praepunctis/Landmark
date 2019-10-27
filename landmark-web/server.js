@@ -7,6 +7,10 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get('/font-awesome-4.7.0/css/font-awesome.css',function(req,res){
+  res.sendFile(path.join(__dirname + '/font-awesome-4.7.0/css/font-awesome.css')); 
+});
+
 app.get('/src/css/main.css',function(req,res){
   res.sendFile(path.join(__dirname + '/src/css/main.css')); 
 });

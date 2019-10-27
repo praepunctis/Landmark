@@ -2,7 +2,7 @@ body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; z-index:1}
 h1{
     font-family: 'Abril Fatface', cursive;
-    color: #379683;
+    color: #2c796a;
 }
 #nav_bar{
     width: 100%;
@@ -10,7 +10,32 @@ h1{
     background-color:#5CDB95;
     text-align: center;
 }
-i{
+#nav_bar i{
     display: inline-block;
     color: #05386B;
+}
+#menu{
+    position: absolute;
+    display:flex;
+    flex-direction: column-reverse;
+    z-index: 5;
+    bottom: 15px;
+    right: 15px;
+  }
+#menu i{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #5CDB95;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+}
+#menu i:hover{
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear ;
+    -webkit-transform:scale(0.9);
+    -moz-transition:scale(0.9) ;
+    background-color: #8EE4AF;
+
 }
