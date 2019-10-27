@@ -59,7 +59,9 @@ app.post('/submit', function(req, res) {
 });
 
 app.get('/points', function(req,res) {
-  res.send(Cockroach.pull_landmarks())
+
+  // res.send(Cockroach.pull_landmarks())
+  Cockroach.pull_landmarks(res)
 });
 
 
