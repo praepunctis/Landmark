@@ -115,14 +115,15 @@ module.exports = {
   //         // Retrieve landmarks.
 
   //     return Landmark.findAll(
-  //       {
-  //         where: {
-  //           // SQL FILTERS HERE
-  //         }
-  //       }
+  //       // {
+  //       //   where: {
+  //       //     // SQL FILTERS HERE
+  //       //   }
+  //       // }
   //     );
   //   })
   //   .then(function (landmarks) {
+  //     console.log(landmarks)
   //     return landmarks || []
   //   })
   //   .catch(function (err) {
@@ -163,6 +164,56 @@ module.exports = {
         rating: 7,
         type:1
       },
+      {        
+        latitude: 37.791010,
+        longitude: -122.402100,
+        name: "Union Square, SF",
+        description: "the teeming commercial hub of San Francisco, tourists cannot miss",
+        image: null,
+        n_ratings: 23,
+        rating: 4.17,
+        type: 1
+      },
+      {
+        latitude: 37.427475,
+        longitude: -122.169716,
+        name: "Stanford University",
+        description: "one of the top universities in California",
+        image: null,
+        n_ratings: 8,
+        rating: 3.98,
+        type: 1
+      }, 
+      {
+        latitude: 37.808674,
+        longitude: -122.409821,
+        name: "Pier 39",
+        description: "great place for dinning and shopping",
+        image: null,
+        n_ratings: 26,
+        rating: 4.7,
+        type: 1
+      },
+      {
+        latitude: 38.502468,
+        longitude: -122.265388,
+        name: "Napa Valley",
+        description: "a renowned Californian wine-producing region north of San Francisco, with hundred’s of vineyards",
+        image: null,
+        n_ratings: 12,
+        rating: 3.4,
+        type: 1
+      },   
+      {   
+        latitude: 37.875170,
+        longitude: -122.247980,
+        name: "Lawrence Berkeley National Laboratory, CA",
+        description: "books yo, read em for a free lamborghanoff",
+        image: null,
+        n_ratings: 4,
+        rating: 3.3,
+        type: 1
+    }
     ]
-  }
+  // }
 }
